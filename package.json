@@ -7,7 +7,12 @@
     "start": "node index.js",
     "watch": "nodemon index.js",
     "front": "cd front && npm start",
-    "build": "cd front && npm run build"
+    "build": "cd front && npm run build",
+    "install-front": "cd front && npm install",
+    "heroku-postBuild": "npm run install-front && npm run build"
+  },
+  "engines":{
+    "node":"16.x"
   },
   "author": "Adh",
   "license": "ISC",
